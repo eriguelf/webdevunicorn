@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/coffee.jpg");
+  filter: brightness(50%);
+  min-height: 85%;
+}
+
+.img {
+  filter: brightness(50%);
+
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black"><b>UNICORN CAFE</b></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black"><b>ABOUT</b></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black"><b>MENU</b></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black"><b>WHERE</b></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<center>
+<img class="" style="width:100%" src="images/coffee.jpg">
+</center>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand  w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:900">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">THE UNICORN CAFE: ABOUT US</span></h5>
+    <center>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet aliquet elementum. Donec lacus libero, tincidunt nec aliquet sed, faucibus ut diam. Suspendisse non leo arcu. Duis in sem iaculis, vestibulum neque et, venenatis arcu. In at sodales eros. Nam iaculis, dui in pretium bibendum, purus nulla tincidunt augue, tincidunt consequat orci erat viverra turpis. Proin sed tellus nisl. Vivamus pulvinar dolor in augue maximus fringilla vitae et metus.</p>
+  </center>
+    <center>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet aliquet elementum. Donec lacus libero, tincidunt nec aliquet sed, faucibus ut diam. Suspendisse non leo arcu. Duis in sem iaculis, vestibulum neque et, venenatis arcu. In at sodales eros. Nam iaculis, dui in pretium bibendum, purus nulla tincidunt augue, tincidunt consequat orci erat viverra turpis. Proin sed tellus nisl. Vivamus pulvinar dolor in augue maximus fringilla vitae et metus.</p>
+    <center>
+    <div class="w3-panel w3-leftbar ">
+      <p><i>"In at sodales eros. Nam iaculis, dui in pretium bibendum, purus nulla tincidunt augue, tincidunt consequat orci erat viverra turpis. Proin sed tellus nisl. Vivamus pulvinar dolor in augue maximus fringilla vitae et metus.</i></p>
+      <p>Owner: Roskov Novitski</p>
+    </div>
+    <img src="images/coffeecup.jpg" style="width:50%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 9am to 8pm.</p>
+    <p><strong>Address:</strong> 71 Adelaid Street, 3499 - Columbia</p>
+  </div>
+</div>
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
